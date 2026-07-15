@@ -66,7 +66,7 @@ e.preventDefault();
 
 $.ajax({
 
-url:"<?=base_url('auth/login')?>",
+url:"<?=base_url('index.php/auth/login')?>",
 
 type:"POST",
 

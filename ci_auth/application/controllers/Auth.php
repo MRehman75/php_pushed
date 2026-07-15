@@ -29,11 +29,7 @@ class Auth extends CI_Controller
 
     public function register()
     {
-        echo "<pre>";
-
-print_r($_POST);
-
-exit;
+       
 
         $name     = trim((string)$this->input->post('name'));
         $email    = trim((string)$this->input->post('email'));
@@ -216,7 +212,7 @@ exit;
 
                 "message"=>"Login successful",
 
-                "redirect"=>base_url('dashboard')
+                "redirect"=>base_url('index.php/dashboard')
 
             ]);
 
